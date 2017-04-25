@@ -11,10 +11,10 @@ pipeline {
                 sh './ci-test'
             }
         }
-        post {
-            always {
-                echo 'Done'
-            }
+    }
+    post {
+        always {
+            echo 'Done'
         }
     }
 }
