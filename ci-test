@@ -1,3 +1,3 @@
 echo 'successful develop'
-
-exit 0
+echo '++ feature-11117'
+exit 666
