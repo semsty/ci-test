@@ -1,0 +1,10 @@
+before_script:
+  - echo "test"
+
+rspec:
+  script:
+    - bundle exec rspec
+
+rubocop:
+  script:
+    - bundle exec rubocop
