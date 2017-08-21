@@ -1,10 +1,21 @@
 before_script:
-  - echo "test"
+  - echo 'before_script'
 
-rspec:
-  script:
-    - bundle exec rspec
+after_script:
+  - echo 'after_script'
 
-rubocop:
+stages:
+  - build
+  - test
+  - deploy
+
+job1:
+  stage: build
   script:
-    - bundle exec rubocop
+    - echo 'stage build' && ./ci-test 
+  only:
+    - master
+  tags:
+    - docker
+
+
