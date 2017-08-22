@@ -8,3 +8,5 @@ services:
     volumes:
       - ./:/app
       - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/vhost.conf
+
+1
