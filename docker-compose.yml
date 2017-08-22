@@ -7,5 +7,3 @@ services:
       - "80:80"
     volumes:
       - ./:/app
-      - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/vhost.conf
-
