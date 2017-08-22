@@ -1,0 +1,12 @@
+version: '1'
+
+services:
+  nginx:
+    image: nginx:1.4.6
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/app
+      - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/vhost.conf
+    links:
+      - app
