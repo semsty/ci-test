@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 
 services:
   nginx:
@@ -7,6 +7,3 @@ services:
       - "80:80"
     volumes:
       - ./:/app
-      - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/vhost.conf
-    links:
-      - app
