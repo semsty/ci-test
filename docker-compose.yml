@@ -2,7 +2,7 @@ version: '2'
 
 services:
   nginx:
-    image: nginx:1.4.6
+    image: nginx:1.4
     ports:
       - "80:80"
     volumes:
