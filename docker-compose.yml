@@ -1,12 +1,9 @@
-version: '1'
+version: '2'
 
 services:
   nginx:
-    image: nginx:1.4.6
+    image: nginx:1.4
     ports:
       - "80:80"
     volumes:
       - ./:/app
-      - ./docker/nginx/vhost.conf:/etc/nginx/conf.d/vhost.conf
-    links:
-      - app
